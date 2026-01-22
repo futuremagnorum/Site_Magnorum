@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function isNavigationLink(href) {
     return (
-      href === "index.html" || href === "foryou.html" || href.endsWith("/index.html") || href.endsWith("/foryou.html")
+      href === "magnorum.html" || href === "index.html" || href.endsWith("/magnorum.html") || href.endsWith("/index.html")
     )
   }
 
