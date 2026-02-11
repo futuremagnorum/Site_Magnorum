@@ -89,22 +89,40 @@
             <div class="container">
                 <div class="hero-content">
 
-                    <div class="hero-text">
-                        <h1 class="hero-title">Conectando Talentos a Oportunidades Reais</h1>
-                        <p class="hero-subtitle">
-                            A Magnorum une tecnologia, inovação e pessoas para transformar ideias, carreiras e negócios
-                            em resultados concretos.
-                        </p>
+                    <form class="contact-form" id="contactForm" method="POST" action="https://formspree.io/f/mreezyen">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
 
-                        <div class="hero-buttons">
-                            <a href="#services" class="btn btn-primary">
-                                <i class="fas fa-arrow-right"></i> Nossos Serviços
-                            </a>
-                            <a href="#contact" class="btn btn-secondary">
-                                <i class="fas fa-envelope"></i> Entre em Contato
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefone (Opcional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+
+                        <!-- opcional: anti-spam -->
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <input type="hidden" name="_subject" value="📩 Contato – Magnorum ForYou">
+
+                        <input type="hidden" name="_next" value="https://magnorum.vercel.app/obrigadof.html">
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary2">
+                                <i class="fas fa-envelope"></i> Enviar Email
+                            </button>
+
+                            <a href="https://wa.me/5511974890057" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
                             </a>
                         </div>
-                    </div>
+                    </form>
 
                     <div class="hero-visual">
                         <div class="floating-card card-1">
@@ -193,11 +211,11 @@
                         <h3>Plano Básico</h3>
                         <p class="price">R$ 360</p>
                         <ul class="price-list">
-                            <li>✔ Site institucional simples</li>
-                            <li>✔ Até 3 páginas</li>
-                            <li>✔ Design responsivo</li>
-                            <li>✔ Formulário de contato</li>
-                            <li>✔ Ideal para começar</li>
+                            <li> Site institucional simples</li>
+                            <li> Até 3 páginas</li>
+                            <li> Design responsivo</li>
+                            <li> Formulário de contato</li>
+                            <li> Ideal para começar</li>
                         </ul>
                     </div>
 
@@ -206,11 +224,11 @@
                         <h3>Plano Intermediário</h3>
                         <p class="price">R$ 720</p>
                         <ul class="price-list">
-                            <li>✔ Até 5 páginas</li>
-                            <li>✔ Design personalizado</li>
-                            <li>✔ SEO básico</li>
-                            <li>✔ Integração com WhatsApp</li>
-                            <li>✔ Melhor custo-benefício</li>
+                            <li> Até 5 páginas</li>
+                            <li> Design personalizado</li>
+                            <li> SEO básico</li>
+                            <li> Integração com WhatsApp</li>
+                            <li> Melhor custo-benefício</li>
                         </ul>
                     </div>
 
@@ -219,11 +237,11 @@
                         <h3>Plano Avançado</h3>
                         <p class="price">R$ 960</p>
                         <ul class="price-list">
-                            <li>✔ Site completo ou e-commerce</li>
-                            <li>✔ Design exclusivo</li>
-                            <li>✔ SEO avançado</li>
-                            <li>✔ Funcionalidades personalizadas</li>
-                            <li>✔ Suporte inicial</li>
+                            <li> Site completo ou e-commerce</li>
+                            <li> Design exclusivo</li>
+                            <li> SEO avançado</li>
+                            <li> Funcionalidades personalizadas</li>
+                            <li> Suporte inicial</li>
                         </ul>
                     </div>
 
@@ -262,66 +280,9 @@
                             <a href="tel:+5511974890057">(11) 97489-0057</a>
                         </div>
 
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <h3>Horário</h3>
-                            <p>Seg-Sex: 8h às 18h<br>Sábado: 8h às 16h</p>
-                        </div>
-
-                        <div class="info-card">
-                            <div class="info-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <h3>Localização</h3>
-                            <p>São Paulo, SP<br>Brasil</p>
-                        </div>
                     </div>
 
-                    <form class="contact-form" id="contactForm" method="POST" action="https://formspree.io/f/mreezyen">
-                        <div class="form-group">
-                            <label for="name">Nome Completo</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Telefone (Opcional)</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Assunto</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-
-                        <!-- opcional: anti-spam -->
-                        <input type="hidden" name="_captcha" value="false">
-
-                        <input type="hidden" name="_subject" value="📩 Contato – Magnorum ForYou">
-
-                        <input type="hidden" name="_next" value="https://magnorum.vercel.app/obrigadof.html">
-
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-primary2">
-                                <i class="fas fa-envelope"></i> Enviar Email
-                            </button>
-
-                            <a href="https://wa.me/5511974890057" target="_blank" class="btn btn-secondary">
-                                <i class="fab fa-whatsapp"></i> WhatsApp
-                            </a>
-                        </div>
-                    </form>
+                    
                 </div>
             </div>
         </section>
